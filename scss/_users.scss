@@ -1,0 +1,28 @@
+.users{
+    padding: 3rem 0;
+    background-color: $very_pale_blue;
+    
+    &__top-bg{
+        @include section-background('../images/bg-section-top-mobile-2.svg');
+        margin-top: 1rem;
+    }
+
+    &__bottom-bg{
+        @include section-background('../images/bg-section-bottom-mobile-2.svg');
+        margin-bottom: 1rem;
+    }
+    &__container{
+        @include container;
+        @include flexItem(center,space-around);
+        flex-direction: column;
+        text-align: center;
+
+        & h3{
+            padding:1rem 0;
+        }
+
+        & article{
+            padding-top: 2rem;
+        }
+    }
+}

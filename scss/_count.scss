@@ -1,0 +1,29 @@
+.count{
+    padding: 2.5rem 0;
+
+    &__main-container{
+        @include container;
+        @include flexItem(center,space-between);
+        flex-direction: column;
+        min-height: 50vh;
+    }
+
+    &__sub-container{
+        @include flexItem(space-around,flex-start);
+        flex-direction: column;
+
+        & img{
+            width:1.7rem;
+        }
+
+        & h2{
+            font-size: 3rem;
+        }
+
+        & p{
+            font-size: 0.8rem;
+            text-align: center;
+            color:#999;
+        }
+    }
+}

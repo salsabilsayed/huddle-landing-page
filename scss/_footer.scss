@@ -1,0 +1,62 @@
+.footer{
+    background-color: $very_dark_cyan;
+    color: $white;
+    min-height: 90vh;
+
+    &__top-bg{
+        @include section-background('../images/bg-footer-top-mobile.svg');
+    }
+
+    &__container{
+        @include container;
+        @include flexItem(center,space-around);
+        flex-direction: column;
+        height: 80vh;
+
+        & p{
+            margin:1.2rem 0;
+            font-size: 0.9rem;
+        }
+
+        & .form{
+            @include flexItem(space-between,flex-end);
+            flex-wrap: wrap;
+
+            & input{
+                width: 100%;
+                border: none;
+                padding: 0.6rem;
+                border-radius: 0.3rem;
+                margin-bottom: 1rem;
+            }
+
+            & button{
+                border: none;
+                background-color: $pink;
+                color:$white;
+                border-radius: 0.2rem;
+                padding:0.6rem 1.2rem;
+            }
+        }
+
+        & ul.contact{
+            list-style-type: none;
+            margin-bottom: 1.2rem;
+        }
+
+        & ul.contact li{
+            padding-bottom: 0.5rem;
+        }
+
+        & span{
+            font-size: 0.9rem;
+            padding-left: 0.4rem;
+        }
+
+        & .social-icons i{
+            font-size: 1.4rem;
+            margin-right: 0.6rem;
+        }
+
+    }
+}

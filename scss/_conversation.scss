@@ -1,0 +1,19 @@
+.conversation{
+    padding: 3rem 0;
+
+    &__container{
+        @include container;
+        @include flexItem(center,space-around);
+        flex-direction: column;
+        padding: 2.5rem 0;
+        text-align: center;
+
+        & h3{
+            padding:1rem 0;
+        }
+
+        & article{
+            padding-top: 2rem;
+        }
+    }
+}

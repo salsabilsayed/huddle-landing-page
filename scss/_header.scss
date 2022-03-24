@@ -1,0 +1,26 @@
+.header__container{
+    @include container;
+    text-align: center;
+    padding: 3rem 0;
+
+    & h1{
+        text-transform: capitalize;
+        font-size: 1.8rem;
+    }
+
+    & .text__container{
+        padding:2rem 0;
+    }
+
+    & .header_btn{
+        @include rounded-btn;
+    }
+
+    & .img__container{
+        padding-top: 1.8rem;
+    }
+
+    & .img__container img{
+        width: 100%;
+    }
+}
